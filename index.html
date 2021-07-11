@@ -8,23 +8,25 @@
     <title>Page Title</title>
 </head>
 <body>
-<form method="post">
-    <label>Lista szövege</label>
-    <input type="text" name="szoveg">
-    <label>Lista elemszáma</label>
-    <input type="text" name="elemszam">
-    <input type="submit" value="Lista kiíratása">
+    <form method="post">
+        <label>Lista szövege</label>
+        <input type="text" name="szoveg">
+        <label>Lista elemszáma</label>
+        <input type="text" name="elemszam">
+        <input type="submit" value="Lista kiíratása">
+    </form>
     <?php
-			$szoveg = $_POST['szoveg'];
-			$elem = $_POST['elemszam'];
+	$szoveg = $_POST['szoveg'];
+	$elem = $_POST['elemszam'];
 
-			echo '<ol>';
-    for($x = 0; $x < $elem; $x++;){
-    echo '<li>' . $szoveg '</li>';
+	echo '<ol>';
+    for($x = 0; $x < $elem; $x++){
+         echo '<li>' . $szoveg . '</li>';
     }
     echo '</ol>';
+
     ?>
-</form>
+
 
 </body>
 </html>
