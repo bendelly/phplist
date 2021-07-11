@@ -15,18 +15,18 @@
         <input type="text" name="elemszam">
         <input type="submit" value="Lista kiíratása">
     </form>
-    <?php
-	$szoveg = $_POST['szoveg'];
-	$elem = $_POST['elemszam'];
 
-	echo '<ol>';
+    <?php
+	$szoveg = $_POST["szoveg"];
+	$elem = $_POST["elemszam"];
+
+	echo "<ol>";
     for($x = 0; $x < $elem; $x++){
          echo '<li>' . $szoveg . '</li>';
     }
     echo '</ol>';
 
     ?>
-
 
 </body>
 </html>
