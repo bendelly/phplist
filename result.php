@@ -53,7 +53,7 @@
 		if($indul == $erkezik){
 			echo "Ugyanaz a cél és az indulás, válassza ki az útirányt helyesen!";
 		} else{
-		    echo "ide kellene az ár"
+		    echo "ide kellene az ár";
 			foreach($utvonal as $value){
 				if((($value['start'] == $indul) && ($value['cel'] == $erkezik)) || (($value['cel'] == $indul) && ($value['start'] == $erkezik)) ){
 					$km = $value['km'];
