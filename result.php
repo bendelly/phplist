@@ -57,10 +57,9 @@
 				if((($value['start'] == $indul) && ($value['cel'] == $erkezik)) || (($value['cel'] == $indul) && ($value['start'] == $erkezik)) ){
 					$km = $value['km'];
 					$viteldij = $km * $kmdij;
-					echo $viteldij;
 				}
 			}
-			$total = $viteldij * $kedvezmeny * $kiegeszito;
+			$total = $viteldij - ($viteldij * $kedvezmeny) + $kiegeszito;
 			echo 'Indulás: ' . $indul . '<br/>';
 			echo 'Érkezés: ' . $erkezik . '<br/>';
 			echo 'Viteldíj: </b>' . $total . '</b> Ft';
