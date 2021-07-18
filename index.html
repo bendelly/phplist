@@ -17,10 +17,10 @@
     </form>
 
     <?php
-	$szoveg = $_POST['szoveg'];
-	$elem = $_POST['elemszam'];
+	$szoveg = $_POST["szoveg"];
+	$elem = $_POST["elemszam"];
 
-	echo '<ol>';
+	echo "<ol>";
     for($x = 0; $x < $elem; $x++){
          echo '<li>' . $szoveg . '</li>';
     }
@@ -53,7 +53,6 @@
             }
             echo '</table>';
     ?>
-
 
 </body>
 </html>
