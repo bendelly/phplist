@@ -61,7 +61,7 @@
 			$total = $viteldij - ($viteldij * $kedvezmeny) + $kiegeszito;
 			echo 'Indulás: ' . $indul . '<br/>';
 			echo 'Érkezés: ' . $erkezik . '<br/>';
-			echo 'Viteldíj: <b>' . $total . '</b> Ft <br/';
+			echo 'Viteldíj: <b>' . $total . '</b> Ft <br/>';
 			echo 'Távolság: <b>' . $km . '</b> km';
 		}
 	?>
