@@ -15,6 +15,7 @@
         <input type="text" name="elemszam">
         <input type="submit" value="Lista kiíratása">
     </form>
+
     <?php
 	$szoveg = $_POST['szoveg'];
 	$elem = $_POST['elemszam'];
@@ -25,6 +26,32 @@
     }
     echo '</ol>';
 
+    ?>
+    <hr>
+    <form method="post">
+        <label>Sor</label>
+        <input type="text" name="sor">
+        <label>Oszlop</label>
+        <input type="text" name="oszlop">
+        <input type="submit" value="Táblázat rajzolása">
+    </form>
+
+    <?php
+			$sor = $_POST['sor'];
+			$oszlop = $_POST['oszlop'];
+
+			echo '<table>';
+
+            for($x = 0; $x < $sor; $x++){
+            echo '<tr>';
+                for($j = 0; $j < $oszlop; $j++){
+                echo '<td>';
+                    echo $j . '/' . $x;
+                    echo '</td>';
+                }
+                echo '</tr>';
+            }
+            echo '</table>';
     ?>
 
 
